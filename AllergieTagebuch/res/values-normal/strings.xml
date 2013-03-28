@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="statistik_monat_jan">J</string>
+    <string name="statistik_monat_feb">F</string>
+    <string name="statistik_monat_mrz">M</string>
+    <string name="statistik_monat_apr">A</string>
+    <string name="statistik_monat_mai">M</string>
+    <string name="statistik_monat_jun">J</string>
+    <string name="statistik_monat_jul">J</string>
+    <string name="statistik_monat_aug">A</string>
+    <string name="statistik_monat_sep">S</string>
+    <string name="statistik_monat_okt">O</string>
+    <string name="statistik_monat_nov">N</string>
+    <string name="statistik_monat_dez">D</string>        
+</resources>

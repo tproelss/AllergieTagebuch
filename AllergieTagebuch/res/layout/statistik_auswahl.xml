@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/art_der_statistik" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerTyp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zeitraum" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerZeitraum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jahr" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerJahr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textViewMonat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monat"
+            android:visibility="gone" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerMonat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </Spinner>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btBerechneStatistik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button"
+                android:height="35dip"
+                android:text="@string/berechnen" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

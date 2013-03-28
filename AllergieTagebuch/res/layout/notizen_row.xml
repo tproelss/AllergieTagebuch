@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+      	
+   	<TextView android:id="@+id/lblTag" 
+   		android:layout_width="35dip" 
+   		android:text="Di" 
+   		android:layout_height="wrap_content"
+   		android:textSize="20dip" />  		   		
+   		<!-- android:layout_marginRight="5dip" -->
+   		
+   	<TextView 
+   		android:id="@+id/lblDatum" 
+   		android:layout_width="wrap_content" 
+   		android:text="2011-09-04" 
+   		android:layout_height="wrap_content" 
+   		android:layout_toRightOf="@+id/lblTag"
+   		android:textSize="20dip" />
+   		
+   	<TextView android:id="@+id/lblNotiz" 
+	   	android:layout_width="wrap_content" 
+	   	android:text="keine" 
+	   	android:layout_height="wrap_content" 	   	
+	   	android:layout_below="@+id/lblDatum" 
+	   	android:layout_alignLeft="@+id/lblDatum"
+	   	android:textStyle="normal"
+	   	/>	    		 
+    
+</RelativeLayout>

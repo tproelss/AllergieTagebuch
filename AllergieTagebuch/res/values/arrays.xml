@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="statistik_arten">
+    	<item>@string/allerg_beschwerden</item>
+    	<item>@string/eigene_stichworte</item> 	
+    </string-array>
+    
+    <string-array name="statistik_zeitraum">
+    	<item>@string/ein_jahr</item>
+    	<item>@string/ein_monat</item>
+    </string-array>
+    
+    <string-array name="statistik_monate">
+	    <item>@string/monat_jan</item>
+		<item>@string/monat_feb</item>
+		<item>@string/monat_mrz</item>
+		<item>@string/monat_apr</item>
+		<item>@string/monat_mai</item>
+		<item>@string/monat_jun</item>
+		<item>@string/monat_jul</item>
+		<item>@string/monat_aug</item>
+		<item>@string/monat_sep</item>
+		<item>@string/monat_okt</item>
+		<item>@string/monat_nov</item>
+		<item>@string/monat_dez</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+      	
+   	<TextView android:id="@+id/lblTag" 
+   		android:layout_width="35dip" 
+   		android:text="Di" 
+   		android:layout_height="wrap_content"
+   		android:textSize="20dip" />  		   		
+   		<!-- android:layout_marginRight="5dip" -->
+   		
+   	<TextView 
+   		android:id="@+id/lblDatum" 
+   		android:layout_width="wrap_content" 
+   		android:text="2011-09-04" 
+   		android:layout_height="wrap_content" 
+   		android:layout_toRightOf="@+id/lblTag"
+   		android:textSize="20dip" />
+   		
+   	<TextView android:id="@+id/lblAllergie" 
+	   	android:layout_width="wrap_content" 
+	   	android:text="keine" 
+	   	android:layout_height="wrap_content" 	   	
+	   	android:layout_below="@+id/lblDatum" 
+	   	android:layout_alignLeft="@+id/lblDatum"
+	   	android:textStyle="italic" 	   	
+	   	/>	    	
+	   				  
+    <ImageView android:layout_width="wrap_content" 
+	    android:src="@drawable/allergie_1_gut" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/imgAllergie" 
+	    android:layout_toLeftOf="@+id/imgMedikamente"
+	    android:layout_marginRight="10dip"
+	    android:layout_centerVertical="true"/>
+    
+    <ImageView android:layout_width="wrap_content" 
+    	android:src="@drawable/medikamente" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/imgMedikamente" 
+    	android:layout_toLeftOf="@+id/imgNotitz"
+    	android:layout_marginRight="10dip"
+    	android:layout_centerVertical="true"    	
+    	/>
+    
+    <ImageView android:layout_width="wrap_content" 
+    	android:src="@drawable/notiz" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/imgNotitz" 
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"/>
+    
+</RelativeLayout>
+
+<!-- <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="50dip">
+   
+   	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="right">
+    	<TextView android:id="@+id/lblTag" android:layout_width="wrap_content" android:text="Di" android:layout_height="wrap_content"/>
+    	<TextView android:id="@+id/lblDatum" android:layout_width="wrap_content" android:text="2011-09-04" android:layout_height="wrap_content" android:paddingLeft="10dip" />
+    	<TextView android:id="@+id/lblAllergie" android:layout_width="wrap_content" android:text="keine" android:layout_height="wrap_content" android:paddingLeft="10dip"/>	    	
+   	</LinearLayout>	   			
+    
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/allergie_1_gut" android:layout_height="wrap_content" android:id="@+id/imgAllergie" android:paddingLeft="10dip"/>
+    
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/medikamente" android:layout_height="wrap_content" android:id="@+id/imgMedikamente" android:paddingLeft="10dip"/>
+    
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/notiz" android:layout_height="wrap_content" android:id="@+id/imgNotitz" android:paddingLeft="10dip"/>
+    
+</LinearLayout> -->

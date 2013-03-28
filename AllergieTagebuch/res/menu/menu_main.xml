@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/statistiken" android:enabled="true" android:checkable="false" android:id="@+id/menu_statistiken" android:visible="true"></item>    
+    <item android:enabled="true" android:checkable="false" android:id="@+id/menu_notizen" android:checked="false" android:visible="true" android:title="@string/notizen"></item>
+    <item android:enabled="true" android:checkable="false" android:id="@+id/menu_about" android:checked="false" android:visible="true" android:title="@string/about"></item>    
+</menu>

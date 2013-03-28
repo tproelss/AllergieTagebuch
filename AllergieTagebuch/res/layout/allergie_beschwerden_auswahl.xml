@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"   
+ 		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"         
+        android:isScrollContainer="true" 
+        android:scrollbarAlwaysDrawVerticalTrack="true" 
+        android:scrollbarStyle="outsideInset" 
+        android:scrollbars="vertical">
+        
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" android:clickable="true">
+
+    <TableRow android:paddingBottom="10dip">
+	    <TextView style="@style/DetailsUeberschrift" 
+	    	android:id="@+id/lblAllergie"
+	    	android:text="@string/allerg_beschwerden"  
+		   	android:layout_width="wrap_content" 	   	
+		   	android:layout_height="wrap_content"	   	
+		   	android:layout_gravity="center_horizontal"
+		   	android:layout_span="2"	   	 	   
+		   	/>	 
+    </TableRow>
+    
+    <TableRow android:id="@+id/rowBeschwerdenUnbekannt"
+		    	android:paddingLeft="20dip" 
+		    	android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+		    	android:clickable="true">
+    	<TextView android:id="@+id/lblDummy"/>
+	    <TextView style="@style/DetailsDaten"
+	    	android:layout_marginLeft="20dip"
+	   		android:id="@+id/lblAllergieKeinEintrag"    		
+	   		android:text="@string/allergie_keine_angabe"    		 	   			   	
+	   		/>
+    </TableRow>
+      	
+    <TableRow android:id="@+id/rowBeschwerdenKeine" 
+    			android:paddingLeft="20dip" 
+    			android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+    			android:clickable="true">
+	   	<ImageView android:id="@+id/imgAllergieKeine"  
+	   		android:layout_width="wrap_content" 
+		    android:src="@drawable/allergie_0_sehr_gut" 
+		    android:layout_height="wrap_content" 	    	 	
+		    />	
+	   	<TextView android:id="@+id/lblAllergieKeine"
+	   		android:layout_marginLeft="20dip"	   	        
+	   		style="@style/DetailsDaten"   		 	
+	   		android:text="@string/allergie_keine"    		    		
+	   		/>
+   	 </TableRow>
+   	 
+   	 <TableRow android:id="@+id/rowBeschwerdenLeicht" 
+    			android:paddingLeft="20dip" 
+    			android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+    			android:clickable="true">
+	   	<ImageView android:id="@+id/imgAllergieLeicht"  
+	   		android:layout_width="wrap_content" 
+		    android:src="@drawable/allergie_1_gut" 
+		    android:layout_height="wrap_content" 	    	 	
+		    />	
+	   	<TextView android:id="@+id/lblAllergieLeicht"
+	   		android:layout_marginLeft="20dip"	   	        
+	   		style="@style/DetailsDaten"   		 	
+	   		android:text="@string/allergie_leicht"    		    		
+	   		/>
+   	 </TableRow>
+	 
+	 <TableRow android:id="@+id/rowBeschwerdenMittel" 
+    			android:paddingLeft="20dip" 
+    			android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+    			android:clickable="true">
+	   	<ImageView android:id="@+id/imgAllergieMittel"  
+	   		android:layout_width="wrap_content" 
+		    android:src="@drawable/allergie_2_mittel" 
+		    android:layout_height="wrap_content" 	    	 	
+		    />	
+	   	<TextView android:id="@+id/lblAllergieMittel"
+	   		android:layout_marginLeft="20dip"	   	        
+	   		style="@style/DetailsDaten"   		 	
+	   		android:text="@string/allergie_mittel"    		    		
+	   		/>
+   	 </TableRow>
+   	 
+   	 <TableRow android:id="@+id/rowBeschwerdenSchwer" 
+    			android:paddingLeft="20dip" 
+    			android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+    			android:clickable="true">
+	   	<ImageView android:id="@+id/imgAllergieSchwer"  
+	   		android:layout_width="wrap_content" 
+		    android:src="@drawable/allergie_3_schlecht" 
+		    android:layout_height="wrap_content" 	    	 	
+		    />	
+	   	<TextView android:id="@+id/lblAllergieSchwer"
+	   		android:layout_marginLeft="20dip"	   	        
+	   		style="@style/DetailsDaten"   		 	
+	   		android:text="@string/allergie_schwer"    		    		
+	   		/>
+   	 </TableRow>
+   	 
+   	 <TableRow android:id="@+id/rowBeschwerdenSehrSchwer" 
+    			android:paddingLeft="20dip" 
+    			android:paddingTop="10dip"
+		    	android:paddingBottom="10dip" 
+    			android:clickable="true" 
+    			>
+	   	<ImageView android:id="@+id/imgAllergieSehrSchwer"  
+	   		android:layout_width="wrap_content" 
+		    android:src="@drawable/allergie_4_sehr_schlecht" 
+		    android:layout_height="wrap_content" 	    	 	
+		    />	
+	   	<TextView android:id="@+id/lblAllergieSehrSchwer"
+	   		android:layout_marginLeft="20dip"	   	        
+	   		style="@style/DetailsDaten"   		 	
+	   		android:text="@string/allergie_sehr_schwer"    		    		
+	   		/>
+   	 </TableRow>
+   	   	             		     	
+</TableLayout>
+</ScrollView>

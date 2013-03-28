@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"   
+ 		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"         
+        android:isScrollContainer="true" 
+        android:scrollbarAlwaysDrawVerticalTrack="true" 
+        android:scrollbarStyle="outsideInset" 
+        android:scrollbars="vertical">
+ 
+ 
+ <LinearLayout	
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:id="@+id/detailsLayout"  
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  	<RelativeLayout android:id="@+id/rlDatum" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+  					android:clickable="true"
+  					android:focusable="true"
+  					android:background="@drawable/border"
+  					android:layout_marginTop="2dip"
+  					android:layout_marginBottom="5dip">
+     	<!-- Datum Überschrift -->
+    	<TextView 
+   		android:id="@+id/lblDatum" 
+   		android:layout_width="wrap_content" 
+   		android:text="2011-09-04" 
+   		android:layout_height="wrap_content" 
+   		android:layout_centerHorizontal="true"
+   		android:layout_alignParentTop="true"
+   		android:textSize="20dip"
+   		android:focusable="false"
+   		android:clickable="true" 
+   		/>
+   		
+   		<TextView    		
+   		android:id="@+id/lblTag" 
+   		android:layout_width="wrap_content" 
+   		android:text="Di" 
+   		android:layout_height="wrap_content"    		
+   		android:layout_toLeftOf="@+id/lblDatum"
+   		android:layout_marginRight="10dip"
+   		android:textSize="20dip" 
+   		android:focusable="false"
+   		android:clickable="true"/>
+   	</RelativeLayout>
+   	
+  	<RelativeLayout android:id="@+id/rlAllergieBeschwerden" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+  					android:clickable="true"
+  					android:focusable="true"
+  					android:background="@drawable/border"
+  					android:layout_marginBottom="5dip"
+  					>
+   		<!-- Allergische Beschwerden  -->
+   		<TextView    		
+   		style="@style/DetailsUeberschrift"
+   		android:id="@+id/lblAllergBeschwerden"    		   	
+   		android:text="@string/allerg_beschwerden"    		 
+   		android:layout_below="@+id/lblDatum"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   		
+   		<TextView   		
+   		style="@style/DetailsDaten"
+   		android:id="@+id/lblAllergBeschwerdenDaten"    		
+   		android:text="keine"    		 
+   		android:layout_below="@+id/lblAllergBeschwerden"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   		
+   		<ImageView   		
+   		android:layout_width="wrap_content" 
+	    android:src="@drawable/allergie_1_gut" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/imgAllergie" 
+	    android:layout_toRightOf="@+id/lblAllergBeschwerden"	    
+	    
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="20dip"
+	    android:focusable="false"
+   		android:clickable="true"
+	    />
+	    
+	 </RelativeLayout>
+   	
+   	<RelativeLayout android:id="@+id/rlMedikamente" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+   					android:clickable="true"
+   					android:focusable="true"
+   					android:background="@drawable/border"
+   					android:layout_marginBottom="5dip">
+   		<!-- Medikamente -->
+   		<TextView 
+   		style="@style/DetailsUeberschrift"
+   		android:id="@+id/lblMedikamente"    		   	
+   		android:text="@string/medikamente"    		 
+   		android:layout_below="@+id/lblAllergBeschwerdenDaten"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   		
+   		<TextView style="@style/DetailsDaten"
+   		android:id="@+id/lblMedikamenteDaten"    		
+   		android:text="Cetiricin,homöopatisches"    		 
+   		android:layout_below="@+id/lblMedikamente"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+    </RelativeLayout>
+   	
+ 	<RelativeLayout android:id="@+id/rlStichworte" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+ 					android:clickable="true"
+ 					android:focusable="true"
+ 					android:background="@drawable/border"
+ 					android:layout_marginBottom="5dip">
+   		<!-- Eigene Stichworte -->
+   		<TextView 
+   		style="@style/DetailsUeberschrift"
+   		android:id="@+id/lblEigeneStichworte"    		   		   
+   		android:text="@string/eigene_stichworte"    		 
+   		android:layout_below="@+id/lblMedikamenteDaten"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   		
+   		<TextView style="@style/DetailsDaten"
+   		android:id="@+id/lblEigeneStichworteDaten"    		
+   		android:text="Joggen,Urlaub"    		 
+   		android:layout_below="@+id/lblEigeneStichworte"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   	</RelativeLayout>
+   	
+     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+     				android:clickable="true"
+     				android:background="@drawable/border"
+     				android:layout_marginBottom="5dip">	
+   		<!-- Kommentar -->
+   		<TextView 
+   		style="@style/DetailsUeberschrift"
+   		android:id="@+id/lblKommentar"    		   	
+   		android:text="@string/kommentar"    		 
+   		android:layout_below="@+id/lblEigeneStichworteDaten"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="false"
+   		android:clickable="true"
+   		/>
+   		
+   		<EditText style="@style/DetailsDaten"
+   		android:id="@+id/lblKommentarDaten"    		
+   		android:text="Heute war ein schöner Tag."    		 
+   		android:layout_below="@+id/lblKommentar"
+   		android:layout_alignParentLeft="true"
+   		android:focusable="true"
+   		android:layout_width="fill_parent"
+   		/>
+   	</RelativeLayout>
+   	
+ 	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:clickable="true">
+   		<Button 
+   		android:layout_height="wrap_content" 
+   		android:id="@+id/btDetailsOK" 
+   		android:text="@string/ok" 
+   		android:layout_width="wrap_content"    		
+   		android:layout_below="@+id/lblKommentarDaten"
+   		android:layout_alignParentRight="true"
+   		android:background="@drawable/button"
+   		android:height="35dip"
+   		/>
+   	</RelativeLayout>
+   		
+</LinearLayout>
+</ScrollView>

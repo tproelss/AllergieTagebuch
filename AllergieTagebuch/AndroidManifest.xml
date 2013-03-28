@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="de.thoca.allergieTagebuch"
+      android:versionCode="2"
+      android:versionName="1.01"
+      android:debuggable="false">
+    
+    <uses-sdk android:minSdkVersion="8" />          
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".ChronologischeUebersicht"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".DetailsEinTag"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".AllergieBeschwerdenAuswahl"
+                  android:label="@string/app_name"/>           
+        <activity android:name=".MedikamenteAuswahl"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".EigeneTagsAuswahl"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="stateHidden"/>
+		<activity android:name=".StatistikAllergieJahr"
+                  android:label="@string/app_name"/>
+		<activity android:name=".StatistikAllergieMonat"
+                  android:label="@string/app_name"/>
+		<activity android:name=".StatistikAuswahl"
+                  android:label="@string/app_name"/>
+		<activity android:name=".NotizenBrowser"
+                  android:label="@string/app_name"/>
+		<activity android:name=".StatistikTagAuswahl"
+                  android:label="@string/app_name"/>
+		<activity android:name=".StatistikEigeneTagsMonat"
+                  android:label="@string/app_name"/>	
+                  <activity android:name=".StatistikEigeneTagsJahr"
+                  android:label="@string/app_name"/>
+        <activity android:name=".About"
+                  android:label="@string/app_name"/>                   
+    </application>
+</manifest>
